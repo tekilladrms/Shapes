@@ -14,7 +14,8 @@ public class Triangle : IShape, IValidable
 
     public static double GetArea(params double[] parameters)
     {
-        if (parameters.Length != 3) throw new ArgumentException("the method works with three parameters");
+        if (parameters.Length != 3) throw new ArgumentException("the method work with three parameters");
+        if (parameters[0] < 0 || parameters[1] < 0 || parameters[2] < 0) throw new ArgumentException("sides of triangle must be greater than 0");
 
         if (!IsValid(parameters[0], parameters[1], parameters[2])) throw new ArgumentException("it is impossible to build a triangle using the passed parameters");
 

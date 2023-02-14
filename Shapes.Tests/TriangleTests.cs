@@ -41,4 +41,13 @@ public class TriangleTests
         var result = Triangle.GetArea(3.0, 3.0, 5.0);
         Assert.Equal(4.15, result);
     }
+
+    //[Theory]
+    //[InlineData(3.0, 3.0, 5.0)]
+    //[InlineData(3.0, 3.0, 5.0)]
+    //[InlineData(3.0, 3.0, 5.0)]
+    //public void IsValid_ShouldThrowExcepyion_WhenOneOfParameterLessThanZero(new double[])
+    //{
+
+    //}
 }
